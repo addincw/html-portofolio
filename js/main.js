@@ -1,11 +1,5 @@
 // smoothScroll;
 var lastPos = 0;
-function jumpSection(elementId){
-  var element1 = document.getElementsByClassName("active")[0];
-  element1.classList.remove("active");
-  var element1 = document.getElementsByName(elementId)[0];
-  element1.classList.add("active");
-}
 function trackPositionElement() {
   var currentPos = document.documentElement.scrollTop;
   return currentPos;
