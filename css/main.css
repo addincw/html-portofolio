@@ -19,6 +19,10 @@ p{
 /* end font */
 
 /* layout */
+html {
+  scroll-behavior: smooth;
+}
+
 body{
   background-color: #f3f3f3;
   color:#333;
@@ -35,7 +39,16 @@ section{
 
 /* navbar folio toogle on scroll */
 .navbar-folio-toogle{
-  border-bottom: 1px solid #333;  
+  opacity: 0;
+  top:-40px;
+  -webkit-transition: all 0.5s; /* For Safari 3.1 to 6.0 */
+  transition: all 0.5s;
+  border-bottom: 1px solid #333;
+}
+
+.navbar-folio-toogle.show{
+  top:0px;
+  opacity: 1;
 }
 
 .logo-brand-folio, .title-brand-folio{
@@ -426,13 +439,23 @@ img{
 }
 
 .scrollTop{
-  display: none;
   color:white;
   position: fixed;
   z-index: 1;
   bottom: 20px;
   right: 20px;
   cursor: pointer;
+  transform: scale(0);
+  -ms-transform: scale(0); /* IE 9 */
+  -webkit-transform: scale(0); /* Safari 3-8 */
+  transition: scale 0.5s;
+}
+
+.scrollTop.show{
+  transform: scale(1);
+  -ms-transform: scale(1); /* IE 9 */
+  -webkit-transform: scale(1); /* Safari 3-8 */
+  transition: transform 0.5s;
 }
 
 .btn-folio{
