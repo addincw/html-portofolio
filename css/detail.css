@@ -6,7 +6,7 @@
   border-radius: 50px;
 }
 
-.profile-img-sm, .logo-brand-folio {
+.logo-brand-folio {
   box-shadow: 3px 3px 10px #333;
 }
 
@@ -14,23 +14,23 @@
   box-shadow: 2px 2px 1px rgba(0, 0, 0, 0.125);
 }
 
-.jumbotron, .navbar-folio .nav-link, .navbar-brand, .contact {
+.contact {
   text-shadow: 1px 1px rgba(0, 0, 0, 0.7);
 }
 
-.experiences h2.linebot::after, .skills h2.linebot::after, .contact h2.lineleft::before, .btn-folio-primary, .projects h2.lineleft::before {
+.contact h2.lineleft::before, .btn-folio-primary, .content h2.lineleft::before {
   background-image: linear-gradient(to bottom left, #158040 35%, #D3DE36);
 }
 
-.projects .card:hover, .skills .skill-group .progress .progress-bar, .contact {
+.contact {
   background-image: linear-gradient(to bottom left, #349946, #1A4790) !important;
 }
 
-.projects h2 {
+.content h2 {
   position: relative;
   padding-left: 0.7rem;
 }
-.projects h2.lineleft::before {
+.content h2.lineleft::before {
   content: "";
   display: block;
   position: absolute;
@@ -344,299 +344,16 @@ footer .btn-link {
 
   /* end social media */
 }
-/* navbar folio toogle on scroll */
-.navbar-folio-toogle {
-  opacity: 0;
-  top: -40px;
+.navbar {
   border-bottom: 1px solid #333;
-  -webkit-transition: all 0.5s;
-  -ms-transition: all 0.5s;
-  transition: all 0.5s;
-}
-.navbar-folio-toogle.show {
-  top: 0px;
-  opacity: 1;
 }
 
-.collapse-folio .nav-link {
-  color: #333 !important;
+/* content */
+.content {
+  padding-top: 150px;
+}
+.content .banner {
+  padding: 20px 0px 30px;
 }
 
-/* end navbar folio toogle on scroll */
-/* navbar */
-.navbar .container {
-  padding: 0rem;
-}
-.navbar-brand {
-  font-size: 18px;
-  color: white !important;
-  font-weight: bold;
-  margin: auto;
-}
-
-.nav-item {
-  text-align: center;
-}
-
-/* end navbar */
-/* navbar-folio */
-.navbar-folio {
-  position: relative;
-  z-index: 1;
-  text-transform: uppercase;
-  /* end nav-link */
-}
-.navbar-folio .nav-link {
-  color: #f3f3f3 !important;
-  text-decoration: none;
-  padding: 0.5rem 0rem !important;
-  margin-right: 1.8rem;
-  position: relative;
-}
-.navbar-folio .nav-link.active, .navbar-folio .nav-link:hover {
-  font-weight: bold;
-}
-.navbar-folio .nav-link.active::after, .navbar-folio .nav-link:hover::after {
-  content: "";
-  display: block;
-  width: 10px;
-  height: 10px;
-  background-color: #1bcb3b;
-  border-radius: 20px;
-  padding: 1px;
-  position: absolute;
-  top: 15px;
-  left: -15px;
-  box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.4);
-}
-
-/* end navbar-folio */
-/* jumbotron */
-.jumbotron {
-  position: relative;
-  text-align: center;
-  margin-top: -65px;
-  padding-top: 80px;
-  color: #f3f3f3;
-  background-image: linear-gradient(190deg, #349946, #1A4790);
-}
-.jumbotron .lead .job, .jumbotron .title {
-  text-transform: uppercase;
-  font-weight: bold;
-}
-.jumbotron .lead {
-  font-size: 12px;
-}
-.jumbotron .lead .job {
-  font-size: 18px;
-  display: block;
-}
-.jumbotron .footer .btn {
-  margin-top: 15px;
-}
-
-.profile-img-sm {
-  width: 140px;
-  height: 140px;
-  border-radius: 50%;
-  overflow: hidden;
-  margin: 2rem auto;
-}
-
-.profile-img-md {
-  display: none;
-}
-
-/* end jumbotron */
-/* skills */
-.skills {
-  background-color: white;
-  /* end skill group */
-}
-.skills h2, .skills p {
-  text-align: center;
-}
-.skills h2.linebot::after {
-  content: "";
-  display: block;
-  height: 3px;
-  width: 35px;
-  margin: 3px auto 0px;
-  border-radius: 15px;
-}
-.skills ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-}
-.skills .skill-group {
-  text-transform: uppercase;
-}
-.skills .skill-group li {
-  font-size: 12px;
-  margin-bottom: 12px;
-}
-.skills .skill-group .progress {
-  border: 1px solid #158040;
-  box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.125);
-}
-/* end skills */
-/* experiences */
-.experiences .body, .experiences .row {
-  background-color: #f3f3f3;
-}
-.experiences h2.linebot::after {
-  content: "";
-  display: block;
-  height: 3px;
-  width: 85px;
-  margin: 3px 0px 0px 0px;
-  border-radius: 15px;
-}
-.experiences .body {
-  box-sizing: border-box;
-  padding: 1rem;
-  max-height: 380px;
-  overflow-y: auto;
-}
-.experiences .card {
-  border-radius: 1.2rem;
-  box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.125);
-  margin-bottom: 25px;
-}
-.experiences .card .card-title {
-  font-weight: bold;
-  padding-bottom: 8px;
-}
-.experiences .card .card-title.with-border {
-  border-bottom: 1px solid rgba(0, 0, 0, 0.125);
-}
-
-/* end experiences */
-/* projects */
-.projects {
-  background-color: #e9ecef;
-}
-.projects .col-md {
-  padding-bottom: 15px;
-  padding-left: 0px;
-  padding-right: 0px;
-}
-.projects .card {
-  overflow: hidden;
-  border-radius: 8px;
-  -webkit-transition: all 0.3s ease-in;
-  -ms-transition: all 0.3s ease-in;
-  transition: all 0.3s ease-in;
-}
-.projects .card:hover {
-  -webkit-transform: scale(1.02);
-  -ms-transform: scale(1.02);
-  transform: scale(1.02);
-  color: #f3f3f3;
-}
-.projects .footer {
-  padding-top: 20px;
-}
-
-/* end projects */
-@media (min-width: 991.98px) {
-  /* font */
-  h1 {
-    font-size: 2.8rem !important;
-  }
-
-  h2 {
-    font-size: 2rem !important;
-  }
-
-  h5 {
-    font-size: 1.25rem !important;
-  }
-
-  p {
-    font-size: 20px;
-  }
-
-  .navbar-brand {
-    font-size: 1.25rem;
-    margin: 0rem 1rem 0rem 0rem;
-  }
-
-  /* end font */
-  /* layout */
-  section {
-    padding: 5rem 0rem;
-  }
-
-  /* jumbotron */
-  .jumbotron {
-    text-align: left;
-    padding-top: 150px;
-  }
-  .jumbotron .profile-img-md {
-    display: block;
-    width: 421.667px;
-    position: absolute;
-    bottom: 0px;
-    right: 18%;
-  }
-  .jumbotron .profile-img-sm {
-    display: none;
-  }
-  .jumbotron .lead {
-    font-size: 20px;
-    margin: 50px 0px;
-  }
-  .jumbotron .lead .job {
-    font-size: 1.8rem;
-  }
-  .jumbotron .footer .btn {
-    display: block;
-    font-size: 18px !important;
-  }
-
-  /* end jumbotron */
-  /* skills */
-  .skills .body {
-    margin-top: 100px;
-  }
-
-  .skill-group li {
-    font-size: 18px;
-    margin-bottom: 25px;
-  }
-
-  /* end skills */
-  /* experiences */
-  .experiences .row {
-    background-color: #e9ecef;
-  }
-
-  .btn-folio-outline {
-    padding: 0.5rem 1rem;
-  }
-
-  /* end experiences */
-  /* projects */
-  .projects .col-md:nth-child(odd) {
-    padding-left: 15px;
-    padding-right: 15px;
-  }
-  .projects .body {
-    padding-top: 50px;
-  }
-  .projects .footer {
-    padding-top: 50px;
-  }
-
-  /* end projects */
-  /* social media */
-  .badge-item {
-    margin: 0rem 0.5rem;
-  }
-
-  /* end social media */
-}
-
-/*# sourceMappingURL=main.css.map */
+/*# sourceMappingURL=detail.css.map */
