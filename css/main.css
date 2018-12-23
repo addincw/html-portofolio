@@ -229,12 +229,12 @@ section.skills{
 }
 /* end skills */
 
-/* Projects */
-.projects .row{
+/* experiences */
+.experiences .row{
   background-color: #f3f3f3;
 }
 
-.projects h2.linebot::after{
+.experiences h2.linebot::after{
   content: '';
   display: block;
   height: 3px;
@@ -244,44 +244,41 @@ section.skills{
   border-radius: 15px;
 }
 
-.projects .body{
+.experiences .body{
   box-sizing: border-box;
   padding: 1rem;
-}
-
-.projects .body{
   background-color: #f3f3f3;
   max-height: 380px;
   overflow-y: auto;
 }
 
-.card.card-folio{
+.experiences .card{
   border-radius: 1.2rem;
   box-shadow: 3px 3px 3px rgba(0,0,0,.125);
   margin-bottom: 25px;
 }
 
-.card.card-folio .card-title{
+.experiences .card .card-title{
   font-weight: bold;
   padding-bottom: 8px;
 }
 
-.card.card-folio .card-title.with-border{
+.experiences .card .card-title.with-border{
   border-bottom: 1px solid rgba(0,0,0,.125);
 }
-/* end projects */
+/* end experiences */
 
-/* designs */
-.designs{
+/* projects */
+.projects{
   background-color: #e9ecef;
 }
 
-.designs h2{
+.projects h2{
   position: relative;
   padding-left: 0.7rem;
 }
 
-.designs h2.lineleft::before{
+.projects h2.lineleft::before{
   content: '';
   display: block;
   position: absolute;
@@ -292,50 +289,31 @@ section.skills{
   background-image: linear-gradient( to bottom left, #158040 35%, #D3DE36 );
 }
 
-.design-item{
-  position: relative;
+.projects .col-md{
+  padding-bottom: 15px;
 }
 
-.design-item:hover .design-item-desc{
-  opacity: 1;
+.projects .col-md:nth-child(even){
+  padding-left: 0px;
+  padding-right: 0px;
 }
 
-.design-item-desc{
-  opacity: 0;
-  position: absolute;
-  top: 0px;
-  width: 100%;
-  height: 100%;
+.projects .card{
+  overflow: hidden;
+  border-radius: 8px;
+  transition: all 0.3s ease-in;
+}
+
+.projects .card:hover{
+  transform: scale(1.02);
+  background-image: linear-gradient( to bottom left, #349946, #1A4790 );
   color:#f3f3f3;
-  padding: 1rem;
-  background-image: linear-gradient( to bottom left, #34994680, #1A4790 );
-  box-sizing: border-box;
-  text-align: center;
-  transition: all 0.5s ease-in;
 }
 
-.design-item-desc h5{
-  text-transform: uppercase;
-}
-
-.design-item-desc .btn-folio-outline{
-  border: 1px solid white;
-  color:white;
-  background-color: transparent;
-}
-
-.designs .footer{
+.projects .footer{
   padding-top: 30px;
 }
-
-/* .designs .design-group{
-  margin: 30px 0px;
-} */
-
-.row.design-group .col-md{
-  padding-bottom: 0.5rem;
-}
-/* end designs */
+/* end projects */
 
 /* contact */
 .contact{
@@ -569,25 +547,25 @@ img{
   }
   /* end skills */
 
-  /* projects */
-  .projects .row{
+  /* experiences */
+  .experiences .row{
     background-color: #e9ecef;
   }
 
   .btn-folio-outline{
     padding: 0.5rem 1rem;
   }
+  /* end experiences */
+
+  /* projects */
+  .projects .body{
+    padding-top: 50px;
+  }
+
+  .projects .footer{
+    padding-top: 50px;
+  }
   /* end projects */
-
-  /* designs */
-  .designs .body{
-    padding-top: 50px;
-  }
-
-  .designs .footer{
-    padding-top: 50px;
-  }
-  /* end designs */
 
   /* social media */
   .badge-item{
