@@ -1,18 +1,9 @@
-// smoothScroll;
-var lastPos = 0;
-function trackPositionElement() {
-  var currentPos = document.documentElement.scrollTop;
-  return currentPos;
-}
-window.onscroll = function() {
-  lastPos = trackPositionElement();
+// Import our custom CSS
+import "../scss/styles.scss";
 
-  if (lastPos <= 500) { //section kedua
-    document.getElementsByClassName("scrollTop")[0].classList.remove("show");
-    document.getElementsByClassName("navbar-folio-toogle")[0].classList.remove("show");
-  }else {
-    document.getElementsByClassName("scrollTop")[0].classList.add("show");
-    document.getElementsByClassName("navbar-folio-toogle")[0].classList.add("show");
-  }
+// Import all of Bootstrap's JS
+import * as bootstrap from "bootstrap";
 
-};
+import HeaderStickyTop from "./header-sticky-top";
+
+new HeaderStickyTop().enable();

@@ -1,0 +1,72 @@
+.home {
+  .banner {
+    margin-top: -60px;
+    padding-top: 136px;
+
+    &-highlight-text {
+      font-size: 32px;
+
+      @include media-breakpoint-up(md) {
+        font-size: 44px;
+      }
+    }
+
+    @include media-breakpoint-down(sm) {
+      .container {
+        padding-left: 0px;
+        padding-right: 0px;
+      }
+    }
+  }
+
+  .experience {
+    position: relative;
+    overflow: hidden;
+    height: 581px;
+
+    @include media-breakpoint-up(lg) {
+      height: 641px;
+    }
+  }
+
+  .experience-content {
+    text-align: center;
+
+    @include media-breakpoint-up(lg) {
+      width: 757px;
+      margin: auto;
+    }
+  }
+  .experience-bg {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    max-width: 1440px;
+    height: 116px;
+
+    @include media-breakpoint-up(md) {
+      height: 216px;
+    }
+
+    @include media-breakpoint-up(lg) {
+      height: 316px;
+    }
+
+    @include media-breakpoint-up(xl) {
+      left: 50%;
+      transform: translateX(-50%);
+    }
+  }
+  .project {
+    background-color: $gray-100;
+
+    .project-description {
+      padding-right: calc(var(--bs-gutter-x) * 0.5);
+
+      @include media-breakpoint-up(md) {
+        padding-right: 170px;
+      }
+    }
+  }
+}
