@@ -20,7 +20,14 @@ module.exports = {
     watchFiles: ["src/*.html"],
   },
   plugins: [
-    new HtmlWebpackPlugin({ template: "./src/index.html" }),
+    new HtmlWebpackPlugin({
+      template: "./src/index.html",
+      filename: "index.html",
+    }),
+    new HtmlWebpackPlugin({
+      template: "./src/articles.html",
+      filename: "articles.html",
+    }),
     new MiniCssExtractPlugin(),
   ],
   module: {

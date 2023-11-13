@@ -1,0 +1,6 @@
+.breadcrumb-container {
+  .breadcrumb-item::before {
+    --bs-breadcrumb-divider: "\F285";
+    font-family: "bootstrap-icons" !important;
+  }
+}

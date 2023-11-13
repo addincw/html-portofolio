@@ -33,6 +33,7 @@ $body-color: #333333;
 @import "node_modules/bootstrap/scss/navbar";
 @import "node_modules/bootstrap/scss/card";
 @import "node_modules/bootstrap/scss/breadcrumb";
+@import "node_modules/bootstrap/scss/pagination";
 @import "node_modules/bootstrap/scss/close";
 @import "node_modules/bootstrap/scss/offcanvas";
 
@@ -53,6 +54,7 @@ $bootstrap-icons-font-dir: "~bootstrap-icons/font/fonts";
 @import "base/typography";
 
 @import "components/article-card";
+@import "components/breadcrumb";
 @import "components/buttons";
 @import "components/project-card";
 @import "components/socmed-links";
@@ -62,3 +64,4 @@ $bootstrap-icons-font-dir: "~bootstrap-icons/font/fonts";
 @import "layout/footer";
 
 @import "pages/home";
+@import "pages/articles";

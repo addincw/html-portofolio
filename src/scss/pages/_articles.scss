@@ -1,0 +1,14 @@
+.articles {
+  .banner {
+    margin-top: -60px;
+    padding-top: 136px;
+    text-align: center;
+
+    @include media-breakpoint-down(sm) {
+      .container {
+        padding-left: 0px;
+        padding-right: 0px;
+      }
+    }
+  }
+}
