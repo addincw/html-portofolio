@@ -1,14 +1,19 @@
 class HeaderStickyTop {
   enable() {
+    const hasVariantTransparent = document.querySelector(".navbar-transparent");
+
     window.addEventListener(
       "scroll",
       function () {
         const currentPosition = this._getCurrentPosition();
 
         if (currentPosition > 400) {
-          document
-            .getElementsByClassName("navbar")[0]
-            .classList.remove("navbar-transparent");
+          if (hasVariantTransparent) {
+            document
+              .getElementsByClassName("navbar")[0]
+              .classList.remove("navbar-transparent");
+          }
+
           document
             .getElementsByClassName("navbar")[0]
             .classList.add("sticky-top");
@@ -18,9 +23,12 @@ class HeaderStickyTop {
         document
           .getElementsByClassName("navbar")[0]
           .classList.remove("sticky-top");
-        document
-          .getElementsByClassName("navbar")[0]
-          .classList.add("navbar-transparent");
+
+        if (hasVariantTransparent) {
+          document
+            .getElementsByClassName("navbar")[0]
+            .classList.add("navbar-transparent");
+        }
       }.bind(this)
     );
   }

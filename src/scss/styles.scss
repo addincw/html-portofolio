@@ -57,6 +57,7 @@ $bootstrap-icons-font-dir: "~bootstrap-icons/font/fonts";
 @import "components/breadcrumb";
 @import "components/buttons";
 @import "components/project-card";
+@import "components/share-actions";
 @import "components/socmed-links";
 @import "components/statistics";
 
@@ -65,3 +66,4 @@ $bootstrap-icons-font-dir: "~bootstrap-icons/font/fonts";
 
 @import "pages/home";
 @import "pages/articles";
+@import "pages/article-detail";
