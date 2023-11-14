@@ -1,0 +1,61 @@
+.navbar {
+  background-color: $body-bg;
+  border-image-source: map-get($gradient-colors, "seagreen");
+  border-image-slice: 1;
+  border-width: 2px;
+  border-top: 0;
+  border-left: 0;
+  border-right: 0;
+  border-style: solid;
+  box-shadow: var(--bs-box-shadow);
+
+  .navbar-nav .nav-link {
+    &.active {
+      position: relative;
+      color: $primary;
+
+      &::after {
+        content: "";
+        display: block;
+        height: 4px;
+        width: 12px;
+        margin: auto;
+        border-radius: 50px;
+
+        background-image: map-get($gradient-colors, "pearlgreen");
+      }
+    }
+  }
+
+  .offcanvas {
+    .offcanvas-body > .nav > .nav-link {
+      --bs-nav-link-color: $body-color;
+
+      padding-left: 0px;
+    }
+  }
+
+  &.navbar-transparent {
+    background-color: transparent;
+    color: $white;
+    border: unset;
+    box-shadow: none;
+
+    .brand-title {
+      background-color: $white;
+      background-image: unset;
+    }
+
+    .navbar-nav .nav-link {
+      color: $white;
+      &.active {
+        font-weight: 600;
+      }
+    }
+
+    .navbar-toggler {
+      --bs-navbar-color: $white;
+      --bs-navbar-toggler-border-color: $white;
+    }
+  }
+}

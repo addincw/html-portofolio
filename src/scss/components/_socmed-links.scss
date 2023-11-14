@@ -1,0 +1,44 @@
+.socmed-links {
+  padding-top: 8px;
+
+  .socmed-link {
+    --bs-btn-padding-x: 0.65rem;
+
+    margin-right: 8px;
+
+    &--instagram {
+      background-image: map-get($gradient-colors, "helioviolet");
+      color: $white;
+    }
+
+    &--github {
+      $value: $gray-800;
+
+      @include button-variant(
+        $value,
+        $value,
+        $hover-background: shade-color($value, $btn-hover-bg-shade-amount),
+        $hover-border: shade-color($value, $btn-hover-border-shade-amount),
+        $active-background: shade-color($value, $btn-active-bg-shade-amount),
+        $active-border: shade-color($value, $btn-active-border-shade-amount)
+      );
+    }
+
+    &--linkedin {
+      $value: $blue-700;
+
+      @include button-variant(
+        $value,
+        $value,
+        $hover-background: shade-color($value, $btn-hover-bg-shade-amount),
+        $hover-border: shade-color($value, $btn-hover-border-shade-amount),
+        $active-background: shade-color($value, $btn-active-bg-shade-amount),
+        $active-border: shade-color($value, $btn-active-border-shade-amount)
+      );
+    }
+  }
+
+  .socmed-link:last-child {
+    margin-right: 0;
+  }
+}

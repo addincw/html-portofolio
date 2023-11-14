@@ -1,0 +1,4 @@
+@mixin gradient-scheme($gradient-color) {
+  background-image: $gradient-color;
+  color: $white;
+}

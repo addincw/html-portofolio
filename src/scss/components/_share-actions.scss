@@ -1,0 +1,30 @@
+.share-actions {
+  $share-action-colors: (
+    "facebook": #0e71f1,
+    "whatsapp": #38be4b,
+    "twitter": #13a2ec,
+  );
+
+  > .btn {
+    --bs-btn-padding-x: 0.65rem;
+
+    margin-right: 8px;
+
+    @each $color, $value in $share-action-colors {
+      &-#{$color} {
+        @include button-variant(
+          $value,
+          $value,
+          $hover-background: shade-color($value, $btn-hover-bg-shade-amount),
+          $hover-border: shade-color($value, $btn-hover-border-shade-amount),
+          $active-background: shade-color($value, $btn-active-bg-shade-amount),
+          $active-border: shade-color($value, $btn-active-border-shade-amount)
+        );
+      }
+    }
+  }
+
+  > .btn:last-child {
+    margin-right: 0;
+  }
+}

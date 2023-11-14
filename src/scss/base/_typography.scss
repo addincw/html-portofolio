@@ -1,0 +1,48 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  &.underline {
+    margin-bottom: 45px;
+  }
+
+  &.underline::after {
+    content: "";
+    display: block;
+    height: 3px;
+    width: 10%;
+    margin-top: 12px;
+    margin-bottom: 0;
+    border-radius: 50px;
+
+    background-image: map-get($gradient-colors, "pearlgreen");
+  }
+
+  &.underline-center::after {
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
+
+.brand-title {
+  font-weight: bold;
+
+  /* Fallback: Set a background color. */
+  background-color: $primary;
+
+  /* Create the gradient. */
+  background-image: map-get($gradient-colors, "seagreen");
+
+  /* Set the background size and repeat properties. */
+  background-size: 100%;
+  background-repeat: repeat;
+
+  /* Use the text as a mask for the background. */
+  /* This will show the gradient as a text color rather than element bg. */
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+}

@@ -1,0 +1,15 @@
+.breadcrumb-container {
+  .breadcrumb {
+    flex-wrap: nowrap;
+    overflow: hidden;
+  }
+
+  .breadcrumb-item {
+    flex-shrink: 0;
+  }
+
+  .breadcrumb-item::before {
+    --bs-breadcrumb-divider: "\F285";
+    font-family: "bootstrap-icons" !important;
+  }
+}
