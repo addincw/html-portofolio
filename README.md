@@ -11,16 +11,16 @@ Using a mobile first, responsive design approach, and the [7-1 pattern Architect
 
 ## Table of Contents
 
-1. About
-2. Table of Contents
-3. Structure Folder
-4. Quick Start
+1. [About](https://github.com/addincw/html-template-gradfull#gradfull-html-template)
+2. [Table of Contents](https://github.com/addincw/html-template-gradfull#table-of-contents)
+3. [Structure Folder](https://github.com/addincw/html-template-gradfull#structure-folder)
+4. [Quick Start](https://github.com/addincw/html-template-gradfull#quick-start)
 
-   4.1 Using Prebuild Files
+   4.1 [Using Prebuild Files](https://github.com/addincw/html-template-gradfull#using-prebuild-files)
 
-   4.2 Build from Source Files
+   4.2 [Build from Source Files](https://github.com/addincw/html-template-gradfull#build-from-source-files)
 
-5. License
+5. [License](https://github.com/addincw/html-template-gradfull#license)
 
 ## Structure Folder
 
