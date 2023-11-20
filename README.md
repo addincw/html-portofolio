@@ -1,21 +1,34 @@
-# portofolio-template 2.0.0
+<img src="https://github.com/addincw/html-template-gradfull/tree/master/dist/assets/banner.png" width="100%" />
 
-FREE HTML5 portofolio template, build with bootstrap framework version 5, file and assets bundler manage by webpack 5.
+# Gradfull Html Template
 
-## Stacks
+![Static Badge](https://img.shields.io/badge/Bootstrap-563D7C?style=for-the-badge&logo=bootstrap&logoColor=white)
+![Static Badge](https://img.shields.io/badge/Sass-CC6699?style=for-the-badge&logo=sass&logoColor=white)
 
-1. [SASS / SCSS](https://sass-guidelin.es/#about-sass)
-2. [Bootstrap 5](https://getbootstrap.com/docs/5.0/getting-started/introduction/) (jquery, popper, and any dependency)
-3. Boottrap Icons
-4. Webpack 5
+Gradfull (Fully Gradient) is html template with a beautiful gradient color theme, modern, attractive but still looks professional. Aimed at company profile websites, landing pages, and also personal portfolio websites, but not limited to.
 
-## Structure Projects
+Using a mobile first, responsive design approach, and the [7-1 pattern Architecture](https://sass-guidelin.es/#architecture). This makes the template easy to maintain and readable. Based on Bootstrap 5, bundler tools using Webpack 5.
+
+## Table of Contents
+
+1. About
+2. Table of Contents
+3. Structure Folder
+4. Quick Start
+
+   4.1 Using Prebuild Files
+
+   4.2 Build from Source Files
+
+5. License
+
+## Structure Folder
 
 ```
 |- src // development folders, if need some customization
     |- assets
     |- js
-    |- scss /** adopting 7-1 patterns */
+    |- scss
         |- abstracts/
         |- base/
         |- components/
@@ -23,22 +36,31 @@ FREE HTML5 portofolio template, build with bootstrap framework version 5, file a
         |- pages/
         |- styles.scss // entry point for other scss file
     |- index.html // template file
-|- dist/ // generate file from src folder
+|- dist/ // prebuild files from src folder
 ```
 
-## How to Use
+## Quick Start
 
-There 2 type to use this template,
+### Using Prebuild Files
 
-1. Use builded files under `dist` folder
-2. Or if you need some customization, you can edit template under folder `src` then, build your own `dist` folder.
+Suitable for you who want to directly use the template without the need for customization. Use prebuild files under `dist` folder, the template is ready to use.
 
-### Template Customization
+### Build from Source Files
 
-If you need some customization, need to have installed nodejs (min. 16.19.1)
+If you are familiar with Webpack, this method is more powerful. You can customize the template and then build it.
+It required to have installed nodejs (min. 16.19.1). Then:
 
 1. `npm run install`
 2. do any customization under folder `src`
-3. when in development, try to run `npm run start`
-4. do `npm run build` if your development is done
-5. use files under `dist` folder.
+3. when in development, try to run `npm run start` to see the changed
+
+When development done, do
+
+1. `npm run build`
+2. use files under `dist` folder
+
+## License
+
+Copyright (c) 2023 Project Cendekia
+
+Gradfull is licensed under The MIT License (MIT). Which means that you can use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the final products. But you always need to state that Project Cendekia is the original author of this template

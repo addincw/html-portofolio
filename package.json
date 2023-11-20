@@ -1,6 +1,6 @@
 {
   "name": "template-portfolio",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "description": "Portofolio template, build with webpack, bootstrap framework v5",
   "main": "index.js",
   "scripts": {
