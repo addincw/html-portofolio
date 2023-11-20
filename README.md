@@ -1,4 +1,4 @@
-<img src="https://github.com/addincw/html-template-gradfull/tree/master/dist/assets/banner.png" width="100%" />
+<img src="https://github.com/addincw/html-template-gradfull/blob/master/dist/assets/banner.png" width="100%" />
 
 # Gradfull Html Template
 
