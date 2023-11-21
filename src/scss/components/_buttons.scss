@@ -1,0 +1,6 @@
+@each $color, $value in $gradient-colors {
+  .btn-gradient-#{$color} {
+    @include gradient-scheme($value);
+    border: unset;
+  }
+}

@@ -1,0 +1,5 @@
+$gradient-colors: (
+  "seagreen": linear-gradient(to bottom left, $green 32%, $blue-800),
+  "pearlgreen": linear-gradient(to bottom left, $green 32%, $yellow),
+  "helioviolet": linear-gradient(to bottom left, $purple-300, $pink-300),
+);

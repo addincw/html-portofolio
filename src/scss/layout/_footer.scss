@@ -1,0 +1,17 @@
+.footer {
+  .footer-content {
+    .nav .nav-item > a.nav-link:hover {
+      color: $primary;
+      text-decoration: underline;
+      text-underline-offset: 0.375em !important;
+    }
+
+    .nav .nav-item > .nav-link {
+      padding-left: 0px;
+      color: $body-color;
+    }
+  }
+  .copyright {
+    background-color: $gray-100;
+  }
+}
