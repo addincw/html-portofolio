@@ -1,5 +1,10 @@
 .article-card {
-  height: 412.75px;
+  --bs-card-height: 412.75px;
+
+  img.card-img-top {
+    height: 265.156px;
+    object-fit: cover;
+  }
 
   .card-title > a {
     font-weight: 600;
