@@ -16,13 +16,13 @@ class HeaderStickyTop {
 
           document
             .getElementsByClassName("navbar")[0]
-            .classList.add("sticky-top");
+            .classList.add("sticky-top", "shadow");
           return;
         }
 
         document
           .getElementsByClassName("navbar")[0]
-          .classList.remove("sticky-top");
+          .classList.remove("sticky-top", "shadow");
 
         if (hasVariantTransparent) {
           document
