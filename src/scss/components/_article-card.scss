@@ -1,7 +1,27 @@
 .article-card {
+  --bs-card-height: 412.75px;
+
+  img.card-img-top {
+    height: 265.156px;
+    object-fit: cover;
+  }
+
   .card-title > a {
     font-weight: 600;
     font-size: 1.25rem;
     text-decoration: none !important;
+  }
+
+  .card-title > a,
+  p.card-text {
+    display: -webkit-box;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 1;
+  }
+
+  p.card-text {
+    -webkit-line-clamp: 3;
   }
 }
