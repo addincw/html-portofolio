@@ -1,6 +1,6 @@
 {
-  "name": "gradfull-theme",
-  "version": "2.0.0",
+  "name": "@addincendekia/template-gradfull",
+  "version": "2.1.0",
   "description": "HTML template with a beautiful gradient color theme, modern, attractive but still looks professional",
   "main": "index.js",
   "scripts": {
@@ -10,15 +10,22 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://addincw@github.com/addincw/MyPortofolio.git"
+    "url": "git+https://addincw@github.com/addincw/template-gradfull.git"
   },
-  "keywords": [],
-  "author": "",
+  "keywords": [
+    "html5",
+    "template",
+    "bootstrap",
+    "scss",
+    "gradient",
+    "colorfull"
+  ],
+  "author": "Addin Cendekia",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/addincw/MyPortofolio/issues"
+    "url": "https://github.com/addincw/template-gradfull/issues"
   },
-  "homepage": "https://github.com/addincw/MyPortofolio#readme",
+  "homepage": "https://github.com/addincw/template-gradfull#readme",
   "devDependencies": {
     "autoprefixer": "^10.4.16",
     "css-loader": "^6.8.1",
