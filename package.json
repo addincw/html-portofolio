@@ -1,6 +1,6 @@
 {
   "name": "@addincendekia/template-gradfull",
-  "version": "2.1.0",
+  "version": "2.1.1",
   "description": "HTML template with a beautiful gradient color theme, modern, attractive but still looks professional",
   "main": "index.js",
   "scripts": {
